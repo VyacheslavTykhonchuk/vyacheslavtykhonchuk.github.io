@@ -1,0 +1,276 @@
+// desktop start
+@media (max-width: 1200px) {
+    // HEADER START
+    .header {
+        top: 0;
+        padding: 0;
+    }
+
+    .header__wrap {
+        padding: 1rem !important;
+    }
+
+    .lang__switch {
+        margin-left: 7.5rem !important;
+    }
+
+    .shrink {
+        padding: 0.5rem 2rem 0 2rem !important;
+
+        li {
+            padding: 21px !important;
+        }
+    }
+
+    // HEADER end
+
+    // HOME START
+    .home {
+        min-width: 300px;
+
+        img {
+            display: none;
+        }
+    }
+
+    .home__content {
+        position: relative;
+        text-align: left;
+        padding: 10rem 8rem 2rem 8rem;
+        left: 0;
+        top: 2rem;
+
+        h3 {
+            width: auto;
+        }
+    }
+
+    .block__title__description {
+        width: auto;
+    }
+
+    .home__btn__wrap {
+        margin: 3rem 0;
+        justify-content: center;
+        display: flex;
+    }
+
+    // HOME END
+
+    // REVIEWS START
+    .reviews__wrap {
+        grid-template-columns: 1fr;
+        padding-top: 0;
+        grid-gap: 30px;
+    }
+
+    .review__item {
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
+    .contain__video {
+        flex-direction: row;
+        align-items: flex-end;
+
+        .review__icon__block {
+            display: none;
+        }
+    }
+
+    .review__video {
+        margin-top: 2rem;
+        position: relative;
+        min-width: 300px;
+        margin-right: 2rem;
+    }
+
+    // REVIEWS END
+}
+// desktop end
+
+// medium screens start
+@media (max-width: 950px) {
+    // HOME START
+    .home__content {
+        padding: 10rem 4rem 2rem 4rem;
+    }
+
+    // HOME END
+
+    // MAIN START
+    .main__content__wrap {
+        grid-template-columns: 1fr;
+    }
+
+    // MAIN END
+
+    // SERVICES START
+    .services__wrap {
+        display: flex;
+
+        /* grid-template-columns: 1fr 1fr; */
+        text-align: left;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        font-size: 13px;
+        padding: 0 1rem;
+    }
+
+    .services__addictional__info {
+        margin-bottom: 3rem;
+    }
+
+    // SERVICES END
+
+    // MODAL START
+    #info__modal {
+        overflow: hidden;
+    }
+    // MODAL END
+}
+
+
+@media (max-width: 700px) {
+    // HEADER START
+    .desktop__header {
+        display: none;
+    }
+
+    #mobile__header {
+        display: block;
+    }
+
+    // HEADER END
+    // main start
+    .main__content__wrap {
+        grid-gap: 40px;
+        padding: 4rem 2rem;
+    }
+    // main end
+    
+    // reviews start
+    .reviews__wrap {
+        padding: 2rem .5rem 0 .5rem;
+        grid-gap: 25px;
+    }
+    // reviews end
+    
+    //modal start
+    .send__btn{
+        align-self: center;
+    }
+    //modal end
+}
+
+// medium screens end
+
+//mobile phones start
+@media (max-width: 480px) {
+    // HEADER START
+    .header {
+        top: 0;
+        padding: 0;
+    }
+
+    .header__wrap {
+        padding: 1rem !important;
+    }
+
+    .lang__switch {
+        margin-left: 7.5rem !important;
+    }
+
+    .shrink {
+        padding: 0.5rem 2rem 0 2rem !important;
+
+        li {
+            padding: 21px !important;
+        }
+    }
+
+    // HEADER END
+
+    // HOME START
+    .home {
+        min-width: 300px;
+
+        img {
+            display: none;
+        }
+    }
+
+    .home__content {
+        position: relative;
+        text-align: left;
+        padding: 5rem 2rem 2rem 2rem;
+        left: 0;
+        top: 2rem;
+
+        h3 {
+            width: auto;
+        }
+    }
+
+    .block__title__description {
+        width: auto;
+    }
+
+    .home__btn__wrap {
+        margin: 3rem 0;
+        justify-content: center;
+        display: flex;
+    }
+
+    // HOME END
+
+    // MAIN START
+    .main__content__wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        padding: 4rem 2rem;
+    }
+
+    .title__info__btn {
+        display: none;
+    }
+
+    // REVIEWS START
+    .reviews__wrap {
+        grid-template-columns: 1fr;
+        padding: 2rem 2rem 0 2rem;
+        grid-gap: 40px;
+    }
+
+    .review__item {
+        margin: 0 auto;
+        max-width: 500px;
+        min-width: 0;
+    }
+
+    .review__video {
+        margin-top: 2rem;
+        position: relative;
+        min-width: 0;
+        margin-right: 0;
+    }
+
+    .contain__video {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // REVIEWS END
+    // MAIN END
+    // modal
+    .modal__child__info__block{
+        margin: 0 !important;
+    }
+    // modal end
+}
+//mobile phones end

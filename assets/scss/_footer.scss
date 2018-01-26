@@ -1,0 +1,66 @@
+footer {
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    border-top: 1px solid lightgray;
+    font-family: GothaProReg;
+    color: #3f4147;
+}
+.footer__title{
+    font-family:"GothaBold";
+    font-size: 11px;
+    padding: 30px 0;
+}
+.footer__contacts{
+    font-size: 16px;
+    a{
+        color:$accentcolor;
+        text-decoration: underline;
+        &:hover{
+            opacity: .5;
+        }
+    }
+}
+.footer__social{
+    display: flex;
+    justify-content: center;
+}
+.social__btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+    svg{
+            path{
+                fill:lightgray;
+            
+        }
+    }
+    &:hover{
+        border: 2px solid #4a6bb8;
+        svg{
+        path{
+            fill:#4a6bb8;
+        
+    }
+}
+       
+    }
+}
+.footer__copyright{
+    padding: 20px 0;
+    span{
+        font-family:"GothaBold";
+    }
+}

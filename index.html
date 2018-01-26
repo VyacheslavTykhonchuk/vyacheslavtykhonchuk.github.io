@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Decollete front Start</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/include.js"></script>
+</head>
+
+<body id="body">
+
+
+	<!-- header - start of scss file -->
+	<header id="header" class="header">
+		<div class="header__wrap">
+			<a href="" class="logo">
+				<img src="assets/img/pravo-logo.png" alt="" />
+			</a>
+			<nav class="header__nav fr desktop__header">
+				<ul class="header__menu">
+					<li>
+						<a href="#prices">УСЛУГИ И ЦЕНЫ</a>
+					</li>
+					<li>
+						<a href="#reviews">ОТЗЫВЫ</a>
+					</li>
+					<li>
+						<a href="#contact">КОНТАКТЫ</a>
+					</li>
+				</ul>
+				<div id="lang__switch">
+					<div class="lang__wrap">
+						<div>EN</div>
+						<div class="round__switch"></div>
+						<div>RU</div>
+					</div>
+				</div>
+			</nav>
+			<nav id="mobile__header">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;"
+				 version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve">
+					<path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+					/>
+				</svg>
+				<div id="drop__menu">
+					<ul class="header__menu">
+						<li>
+							<a href="#prices">УСЛУГИ И ЦЕНЫ</a>
+						</li>
+						<li>
+							<a href="#reviews">ОТЗЫВЫ</a>
+						</li>
+						<li>
+							<a href="#contact">КОНТАКТЫ</a>
+						</li>
+						<li>
+							<a href="#contact">ENGLISH</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!-- header - end of scss file -->
+
+
+
+	<!-- main - start of scss file -->
+	<main id="container" class="container">
+		<!-- home bg	start -->
+
+		<!-- home bg	end -->
+		<!-- home title and content start -->
+		<section class="home">
+			<img src="assets/img/main-bg.jpg" alt="">
+			<div class="home__content">
+				<h3 class="block__title__underline">
+					Правовое сопровождение малого ИТ-бизнеса
+				</h3>
+				<div class="block__title__description">
+					Зачастую интернет-проекты, разработчики, маркетологи, дизайнеры, стартаперы и другие IT-специалисты не уделяют должного внимания
+					правовым аспектам своей деятельности.
+					<br>
+					<br> Но документы должны быть в порядке, и мы в этом поможем.
+				</div>
+				<div class="home__btn__wrap">
+					<a class="home__btn btn" href="#prices">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+							<metadata>
+								<?xpacket begin="&#65279;" id="W5M0MpCehiHzreSzNTczkc9d"?>
+									<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21        ">
+										<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+											<rdf:Description rdf:about="" />
+										</rdf:RDF>
+									</x:xmpmeta>
+									<?xpacket end="w"?>
+							</metadata>
+							<image id="Vector_Smart_Object_copy_2" data-name="Vector Smart Object copy 2" width="22" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAQAAABuvaSwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiARkPEStzELzhAAABI0lEQVQoz5XTsWobQRQF0CtjghNQHIwb1U4lVLvIB7hP4cI/oj8QuNVn6BNiZPfqtxUYXJqF3ZRy4LjYYI9WDmTnNcN9d2bum3dfpIiJubUa1NbmJmX+fTu2tAOtSqUFO0vjPnlqi8bC7O34zEKDrWlJnnrGyvmeqIhzKzx39E7AFrdGB9SIkVtsjTvyEqt/UDv6CkuJiZ2mJ+C7i56Yxs4k5lj07nr02EMWmMea4ge6aDQ9ZIb7kTrHOc3+apJ862Ft/hzlLE8F9Ck/8zlJ8iU/9shPOQuq4rlrPGi1NrgsMhVRawtobIMXL3hwUmRa9WGBpzZg42u/wKPcJbnZK+QqVapc5XeB3iT59XFTDh3ytymD2j3QSIMsOtD8A8fqvwb2FbxlK3bod52uAAAAAElFTkSuQmCC"
+							/>
+						</svg>
+						<span>УСЛУГИ И ЦЕНЫ</span>
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- home title and content end -->
+		<!-- main services and prices title start -->
+		<section class="main__content bg__white" id="prices">
+			<h2 class="block__title">УСЛУГИ И ЦЕНЫ</h2>
+			<p class="block__description">Pravo agency
+				<span>выполняет роль юристов-аутсорсеров, надежно прикрывая правовой тыл вашей деятельности.</span>
+			</p>
+		</section>
+		<!-- main services and prices title end -->
+		<!-- main services and prices content start -->
+		<div class="main__content__wrap">
+			<!-- first child start -->
+			<div class="main__content__child" id="first__child">
+				<div class="content__child__icon">
+					<img id="first__child__img1" src="assets/img/g10.png" alt="">
+					<img id="first__child__img2" src="assets/img/g11.png" alt="">
+
+				</div>
+				<div class="content__child__info__block">
+					<div class="info__block__title">
+						<h4>НАВЕДЕНИЕ ПОРЯДКА В ДЕЛАХ</h4>
+						<a href="" class="title__info__btn btn">&#105;</a>
+					</div>
+					<div class="info__block__description">
+						<p>Аудит документов и платежей на предмет:</p>
+						<ul>
+							<li>соблюдения необходимых формальностей и процедур,</li>
+							<li>наличия всех оригиналов договоров, актов, </li>
+							<li>легализация зависших платежей.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- first child end -->
+			<!-- secont child start -->
+			<div class="main__content__child" id="second__child">
+				<div class="content__child__icon">
+					<img id="second__child__img1" src="assets/img/g12.png" alt="">
+					<img id="second__child__img2" src="assets/img/g13.png" alt="">
+				</div>
+				<div class="content__child__info__block">
+					<div class="info__block__title">
+						<h4>НАВЕДЕНИЕ ПОРЯДКА В ДЕЛАХ</h4>
+						<a href="" class="title__info__btn btn">i</a>
+					</div>
+					<div class="info__block__description">
+						<p>Аудит документов и платежей на предмет:</p>
+						<ul>
+							<li>соблюдения необходимых формальностей и процедур,</li>
+							<li>наличия всех оригиналов договоров, актов, </li>
+							<li>легализация зависших платежей.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- second child end -->
+			<!-- third child start -->
+			<div class="main__content__child" id="third__child">
+				<div class="content__child__icon">
+					<img id="third__child__img1" src="assets/img/g14.png" alt="">
+					<img id="third__child__img2" src="assets/img/g15.png" alt="">
+				</div>
+				<div class="content__child__info__block">
+					<div class="info__block__title">
+						<h4>НАВЕДЕНИЕ ПОРЯДКА В ДЕЛАХ</h4>
+						<a href="" class="title__info__btn btn">i</a>
+					</div>
+					<div class="info__block__description">
+						<p>Аудит документов и платежей на предмет:</p>
+						<ul>
+							<li>соблюдения необходимых формальностей и процедур,</li>
+							<li>наличия всех оригиналов договоров, актов, </li>
+							<li>легализация зависших платежей.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- third child end -->
+			<!-- fourth child end -->
+			<div class="main__content__child" onmouseover="document.img.src='assets/img/path11.png';" onmouseout="document.img.src='assets/img/path12.png';">
+				<div class="content__child__icon">
+					<img src="assets/img/path12.png" name="img" alt="">
+				</div>
+				<div class="content__child__info__block">
+					<div class="info__block__title">
+						<h4>НАВЕДЕНИЕ ПОРЯДКА В ДЕЛАХ</h4>
+						<a href="" class="title__info__btn btn">i</a>
+					</div>
+					<div class="info__block__description">
+						<p>Аудит документов и платежей на предмет:</p>
+						<ul>
+							<li>соблюдения необходимых формальностей и процедур,</li>
+							<li>наличия всех оригиналов договоров, актов, </li>
+							<li>легализация зависших платежей.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- fourth child end -->
+
+			<!-- modall popup start -->
+			<div id="info__modal">
+				<div class="arrow__right"></div>
+				<div class="main__content__child modal__info__block">
+					<div class="content__child__title modal__title">
+						УСЛУГА
+					</div>
+					<div class="content__child__info__block">
+						<div class="info__block__title modal__info__block__title">
+							<h4>ОПТИМИЗАЦИЯ ДОГОВОРНЫХ ОТНОШЕНИЙ</h4>
+						</div>
+						<div class="info__block__description">
+							<p>Борьба внутри меня, и я был в самых разных ситуациях в моей жизни. Таким образом, борьба, что у меня на постоянной
+								основе, это просто пробовать и быть лучше. </p>
+							<br>
+							<p>Есть определенная разница между публичным человеком и обычным человеком, это как сойти с ума - для меня во всяком
+								случае - открыть себя целиком для всего мира. </p>
+						</div>
+					</div>
+				</div>
+				<div class="main__content__child modal__prices__block">
+					<div class="content__child__title modal__title">
+						ЦЕНА
+					</div>
+					<div class="content__child__info__block modal__child__info__block">
+						<div class="info__block__prices">
+							<div class="info__block__prices__child">
+								<div>
+									<p class="employee__quantity">
+										<50</p>
+											<p class="employee">Сотрудников</p>
+								</div>
+								<div class="price__wrap">
+									<p class="price">от
+										<span>5000</span>
+										<span>грн.</span>
+									</p>
+								</div>
+							</div>
+							<div class="info__block__prices__child">
+								<div >
+									<p class="employee__quantity">
+										50-100</p>
+											<p class="employee">Сотрудников</p>
+								</div>
+								<div class="price__wrap">
+									<p class="price">от
+										<span>15000</span>
+										<span>грн.</span>
+									</p>
+								</div>
+							</div>
+							<div class="info__block__prices__child">
+								<div>
+									<p class="employee__quantity">
+										> 100</p>
+											<p class="employee">Сотрудников</p>
+								</div>
+								<div class="price__wrap">
+									<p class="price">от
+										<span>25000</span>
+										<span>грн.</span>
+									</p>
+								</div>
+							</div>
+							
+						</div>
+						<a href="#contact" class="send__btn order__btn">ЗАКАЗАТЬ</a>
+					</div>
+					
+				</div>
+
+			</div>
+			<!-- modal popup end -->
+
+		</div>
+		</section>
+		<!-- main services and prices content end -->
+		<!-- reviews title start -->
+		<section id="reviews" class="main__content bg__white">
+			<h2 class="block__title">ОТЗЫВЫ</h2>
+			<p class="block__description">
+				<span>Мнение наших клиентов </span>
+				делает мир и нас лучше :)
+			</p>
+		</section>
+		<!-- reviews title end -->
+
+		<!-- reviews block start -->
+		<section>
+			<div class="reviews__wrap">
+				<div class="review__item" id="first__review">
+					<div class="review__icon__block">
+						<img id="first__review__img1" src="assets/img/2.png" alt="">
+						<img id="first__review__img2" src="assets/img/1.png" alt="">
+					</div>
+					<div class="review__text">
+						Главная тема для меня – любовь. Мы все хотим ее, но не знаем как получить, поэтому все, что мы делаем, — это всего лишь попытки
+						найти счастье.
+					</div>
+					<div class="review__credits">
+						<div class="review__photo__block">
+							<img src="assets/img/first-reviewer.jpg" alt="" class="review__photo">
+						</div>
+						<p class="reviewer__name">Алексей Фёдоров</p>
+						<div class="reviewer__info">
+							<span>CEO</span>
+							<a class="reviewer__link" href="deco.agency">deco.agency</a>
+						</div>
+					</div>
+				</div>
+				<div class="review__item" id="second__review">
+					<div class="review__icon__block">
+						<img id="second__review__img1" src="assets/img/2.png" alt="">
+						<img id="second__review__img2" src="assets/img/1.png" alt="">
+					</div>
+					<div class="review__text">
+						Главная тема для меня – любовь. Мы все хотим ее, но не знаем как получить, поэтому все, что мы делаем, — это всего лишь попытки
+						найти счастье.
+					</div>
+					<div class="review__credits">
+						<div class="review__photo__block">
+							<img src="assets/img/second-reviewer.jpg" alt="" class="review__photo">
+						</div>
+						<p class="reviewer__name">Артур Ораджалиев</p>
+						<div class="reviewer__info">
+							<span>CEO</span>
+							<a class="reviewer__link" href="ain.ua">AIN.ua</a>
+						</div>
+					</div>
+				</div>
+				<div class="review__item contain__video">
+					<div class="review__icon__block">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 25 25">
+							<metadata>
+								<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+									<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21        ">
+										<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+											<rdf:Description rdf:about="" />
+										</rdf:RDF>
+									</x:xmpmeta>
+									<?xpacket end="w"?>
+							</metadata>
+							<image id="Vector_Smart_Object" data-name="Vector Smart Object" width="25" height="25" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAMAAADzN3VRAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAqFBMVEXJys/////Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys8AAABNJ5PlAAAANnRSTlMAAA1fqN38CYDwL9pC9PUwCoHkSyQVBhAUIChD0EAqYOpQ4qmlE8TowsBT5cWg605GSgEHIn59xvlKAAAAAWJLR0Q3MLi4RwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IBGgEKFHRr2KIAAADmSURBVCjPhZLnFoIwDIXDRiqKE7ei4t5K3v/RTFpQVNT7I4dzP9KkaQCUdMO0bLQt09A1JeU7bgkzlVznSTyBeQkvI2UfX+WXFfHeAWKlysQR+CkREHGxSDUNdO6q3mi22lwy7HR7/QF3qIPBfwzhIao9YmsMJsWJ9IIoJdqUvBlYFAeShDiPFeHjLLApLlKCy0iSFXk28JnrjCBumKz56zVn25A5O5mTr7MP83W4t4Pq7Zj1diDPLLrPiS0jncG52Y3DC4Fr5xZt1QwgKZxb8nXWzpf38b0/b/pjD952J8ntTuG+3QE9zkR55uz5xwAAAABJRU5ErkJggg=="
+							/>
+						</svg>
+
+					</div>
+					<div class="review__video">
+						<img src="assets/img/reviewer3.jpg" alt="">
+						<div class="play__btn">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="12" viewBox="0 0 10 12">
+								<metadata>
+									<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+										<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21        ">
+											<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+												<rdf:Description rdf:about="" />
+											</rdf:RDF>
+										</x:xmpmeta>
+										<?xpacket end="w"?>
+								</metadata>
+								<image id="Vector_Smart_Object" data-name="Vector Smart Object" width="10" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAQAAADxYuQrAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiARoBGBgFKeRaAAAAdklEQVQI12Nw3eP6ybXKlfU/AwIyuv5nYGBgYLjMkLzrNAMUMEFpXYYTbn1u3KiCDAxMDIUMV9zcGRgY4NoRYDFDIaYgA8MdJgYsAFNwMYMFC4rAA4aMXTuRVf5j6GfQ2bWTgYGBAaYSzfH7GL4zVDMYI4QYGADq7CMd8sLGXgAAAABJRU5ErkJggg=="
+								/>
+							</svg>
+
+						</div>
+					</div>
+					<div class="review__credits">
+						<p class="reviewer__name">Григорий Маленко</p>
+						<div class="reviewer__info">
+							<span>CEO</span>
+							<a class="reviewer__link" href="serm.ua">SERM.ua</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- load more block start -->
+		<section>
+			<div class="load__more__wrap">
+				<div class="load__more">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="20" viewBox="0 0 23 20">
+						<metadata>
+							<?xpacket begin="&#65279;" id="W5M0MpCehiHzreSzNTczkc9d"?>
+								<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21        ">
+									<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+										<rdf:Description rdf:about="" />
+									</rdf:RDF>
+								</x:xmpmeta>
+								<?xpacket end="w"?>
+						</metadata>
+						<image id="Vector_Smart_Object" data-name="Vector Smart Object" width="23" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAUCAMAAABRYFY8AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAvVBMVEWnDF3///+nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF2nDF0AAABzGn3kAAAAPXRSTlMAABRonbC3yWIdAYj8/a8oBNHnhT8hHFB51/lt45QKXO6Au3on5FcSWXckc+UyI+rmAjP0mB5I+6h7YPEHeeZsUAAAAAFiS0dEPklkAOMAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiARkTIQeLsrzlAAAA4klEQVQY013R1xKCMBAF0ESsERAbKHbsDbFhvf//W7JSw33KnJnsbrKMhSkoxVK5Uq0xHiZUUVfxj6Y3Mm400Wp3uqbV68MeJG4MMRpHFydTzGJ3MGdJFkus+FrQcbNNWez2qn3AkeXinqi9d847u1wDv1H9u+TcfwA++fMlOX/j8w38+8Fbcv560pw+8PAl53fyW9DnepGc3nX2aLCTm/cjDra634nUtxtysWYrLBdpnTmc+D9nmE6iC+MRhkby/wMb/Z5ldjvtFppGuhfW0LVwMWpdZPYVpFatlEtFpRDN8wP2TRqnY1pw/QAAAABJRU5ErkJggg=="
+						/>
+					</svg>
+					<p>ЗАГРУЗИТЬ ЕЩЕ</p>
+				</div>
+			</div>
+		</section>
+		<!-- load more block end -->
+		<!-- reviews block end -->
+		<!-- services title start -->
+		<section class="main__content bg__white" id="contact">
+			<h2 class="block__title">ЗАПРОС НА УСЛУГИ</h2>
+			<!-- services title end -->
+			<!-- services section start -->
+			<section>
+				<div class="services__wrap">
+					<div class="services__form__info__wrap">
+						<div class="services__form__container">
+							<input type="text" name="Name" placeholder="ФИО*">
+							<input type="text" name="Phone" placeholder="ТЕЛЕФОН*">
+							<input type="text" name="Email" placeholder="E-MAIL*">
+							<input type="text" name="Website" placeholder="САЙТ">
+						</div>
+						<div class="services__info__container">
+							<div class="info__title">
+								<span>МЕНЯ ИНТЕРЕСУЕТ</span>
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+									<metadata>
+										<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+											<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21        ">
+												<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+													<rdf:Description rdf:about="" />
+												</rdf:RDF>
+											</x:xmpmeta>
+											<?xpacket end="w"?>
+									</metadata>
+									<image id="Vector_Smart_Object" data-name="Vector Smart Object" width="22" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAe1BMVEXJys/////Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys/Jys8AAAD9MREJAAAAJ3RSTlMAABl2vO0Nkfrx1Crd8IUs66kUiAEP08kOvfu+CFU2BlEJCjrgJCPFC6+qAAAAAWJLR0QovbC1sgAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IBGRQLGoKQCpEAAADCSURBVBjTddFHAoMgFATQjx0VUSwkmh6Tuf8No2BbhFnBW8AvRCaeH4RAGPgeMzEYxQnA05QDSRytnOUQhZxPshDIM8tZiUrRElWhzGaOctQNbWlq5NHEMaqDEmsqxIy8RCg6MlMi8chHYe9t17WGWQGfAkirGtAnwxJnCrktXaPvMVxmZjwkpIavGDjXuBlOsfL98RTi9aaVl0emCGErMY+sXx54/nIrkMaR9gL3dj7fQzuO5l2jcgzWtQbX0v6s+AeXUBCr5X7OMQAAAABJRU5ErkJggg=="
+									/>
+								</svg>
+							</div>
+							<div class="info__list">
+								<ul>
+									<li>Наведение порядка в делах</li>
+									<li>Правовое сопровождение деятельности</li>
+									<li>Оптимизация договорных отношений</li>
+									<li>Разработка договоров</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<div class="services__addictional__info">
+						<p>ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</p>
+						<textarea name="Addictional info" id="add__info" cols="30" rows="10"></textarea>
+					</div>
+					<a href="" class="send__btn btn">ОТПРАВИТЬ</a>
+				</div>
+			</section>
+			<!-- services section end -->
+
+	</main>
+	<!-- main - end of scss file -->
+
+
+
+
+
+
+	<!-- footer - start of scss file -->
+
+	<footer id="footer" class="footer">
+		<h4 class="footer__title">PRAVO AGENCY:</h4>
+		<div class="footer__contacts">
+			<p>01001, Киев, ул.Костёльная 9, оф.8 </p>
+			<p>+380 (67) 324 10 10</p>
+			<a href="hello@pravo.agency">hello@pravo.agency</a>
+		</div>
+		<div class="footer__social">
+			<div class="social__btn">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="5px" height="12px">
+					<defs>
+						<filter id="Filter_0">
+							<feFlood flood-color="rgb(74, 107, 184)" flood-opacity="1" result="floodOut" />
+							<feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+							<feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+						</filter>
+
+					</defs>
+					<g></g>
+					<path d="M3.333,4.000 L3.333,2.809 C3.333,2.272 3.432,2.000 4.128,2.000 L5.000,2.000 L5.000,0.000 L3.544,0.000 C1.761,0.000 1.172,0.981 1.172,2.666 L1.172,4.000 L0.000,4.000 L0.000,5.999 L1.172,5.999 L1.172,12.000 L3.333,12.000 L3.333,5.999 L4.802,5.999 L5.000,4.000 L3.333,4.000 Z"
+					/>
+					</g>
+				</svg>
+			</div>
+			<div class="social__btn">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="11px">
+					<defs>
+						<filter id="Filter_0">
+							<feFlood flood-color="red" flood-opacity="1" result="floodOut" />
+							<feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+							<feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+						</filter>
+
+					</defs>
+					<g>
+						<path d="M9.363,0.170 C8.013,0.592 7.160,1.685 7.257,2.882 L7.289,3.343 L6.749,3.286 C4.784,3.070 3.067,2.336 1.609,1.102 L0.896,0.489 L0.713,0.942 C0.324,1.949 0.573,3.014 1.382,3.729 C1.814,4.125 1.717,4.181 0.972,3.945 C0.713,3.871 0.486,3.814 0.464,3.843 C0.389,3.909 0.648,4.766 0.853,5.105 C1.134,5.576 1.706,6.037 2.333,6.309 L2.862,6.526 L2.236,6.536 C1.631,6.536 1.610,6.545 1.675,6.744 C1.890,7.355 2.743,8.006 3.694,8.289 L4.363,8.486 L3.780,8.788 C2.916,9.222 1.901,9.466 0.886,9.484 C0.399,9.494 0.000,9.532 0.000,9.559 C0.000,9.654 1.318,10.180 2.084,10.389 C4.384,11.000 7.117,10.737 9.168,9.692 C10.626,8.947 12.084,7.469 12.765,6.036 C13.132,5.273 13.499,3.879 13.499,3.212 C13.499,2.777 13.531,2.722 14.136,2.204 C14.492,1.902 14.827,1.573 14.892,1.478 C15.000,1.299 14.989,1.299 14.438,1.459 C13.521,1.743 13.391,1.705 13.845,1.281 C14.179,0.979 14.579,0.433 14.579,0.273 C14.579,0.245 14.417,0.291 14.233,0.377 C14.039,0.471 13.607,0.612 13.283,0.697 L12.700,0.858 L12.171,0.546 C11.879,0.377 11.469,0.188 11.253,0.131 C10.702,0.000 9.859,0.019 9.363,0.170 Z"
+						/>
+					</g>
+				</svg>
+			</div>
+			<div class="social__btn">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+				 width="15px" height="15px" viewBox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;" xml:space="preserve">
+					<g>
+						<path id="LinkedIn" d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707   c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21   v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824   C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463   c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z    M5.477,420.56h92.184v-277.32H5.477V420.56z"
+						 fill="#006DF0" />
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+				</svg>
+
+			</div>
+		</div>
+		<div class="footer__copyright">
+			©2015,
+			<span> Pravo agency</span>
+		</div>
+
+	</footer>
+
+	<!-- footer - end of scss file -->
+</body>
+
+</html>

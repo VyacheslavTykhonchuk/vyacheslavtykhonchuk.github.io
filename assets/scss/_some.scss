@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	transition-duration: .7s;
+	transition-timing-function: ease;
+}
+
+a {
+	text-decoration: none;
+	color: #f04040;
+	transition: (color .3s);
+}
+
+a:hover {
+	color: #e40a0a;
+}
+
+body {
+	font-family: GothaProMed, san-serif;
+	font-size: 16px;
+	line-height: 1;
+}
+.wrap{
+	margin: 0 auto;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.bg__white{
+	background-color: white !important;
+}
+.btn{
+	cursor: pointer;
+	vertical-align: middle;
+}

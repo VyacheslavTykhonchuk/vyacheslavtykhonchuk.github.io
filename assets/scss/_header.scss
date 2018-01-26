@@ -1,0 +1,132 @@
+// base start
+header {
+    text-align: center;
+    padding: 30px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    opacity: .9;
+}
+.header{
+    display: block;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    transition-duration: .7s;
+    transition-timing-function: ease; 
+    padding: 0;  
+    background-color: $bgcolor;
+}
+// base end
+// dynamic header start
+.shrink {
+    padding: 0.5rem 2rem 0 2rem !important;
+    li{
+        padding: 21px !important;
+    }
+}
+// dynamic header start
+
+// mobile header (burger) start
+#mobile__header{
+    display: none;
+    float: right;
+    padding: 10px;
+    cursor: pointer;
+}
+// mobile header (burger) end
+// mobile drop menu start
+#drop__menu{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -300px;
+    background-color: #f5f5f5;
+    z-index: -1;
+    opacity: 0.9;
+    .header__menu{
+        display: flex;
+        flex-direction: column;
+    }
+}
+// mobile drop menu start
+// header start
+.logo{
+    float: left;
+    transition-duration: 0.7s;
+    transition-timing-function: ease; 
+}
+.header__wrap {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2.625rem 6.25rem 0 10rem ;
+    transition-duration: .7s;
+    transition-timing-function: ease; 
+}
+.header-wrap .active{
+    background-color: #a70c5d;
+}
+.header__menu, .header__menu li{
+    display: inline-block;
+    vertical-align: middle;
+}
+.header__menu li{
+    padding: 16px;
+    font-size: 12px;
+    a{
+        color: rgb(63, 65, 71);
+        transition-duration: .5s;
+        transition-timing-function: ease;
+        transition-property: color;
+        &:hover{
+            color: #a70c5d;
+        }
+    }
+}
+.header__menu a{
+    display: inline-block;
+    vertical-align: middle;
+}
+// header end
+// switch button start
+#lang__switch{
+    margin-left: 8.5rem;
+    display: inline-block;
+    border-radius: 20px;
+    border: 3px solid lightgray;
+    overflow: hidden;
+    position: relative;
+    width: 75px;
+    height: 37px;
+    top: 10px;
+    cursor: pointer;
+    &:hover{
+        border: 3px solid gray;
+        .round__switch{
+            background-color: gray;
+        }
+    }
+}
+.lang__wrap{
+    color: $accentcolor;
+    display: flex;
+    width: auto;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    position: absolute;
+    right:11px;
+}
+.round__switch{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: lightgray;
+    margin: 0 10px;
+}
+// switch button end
