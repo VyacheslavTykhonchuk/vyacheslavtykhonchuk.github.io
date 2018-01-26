@@ -141,12 +141,18 @@ jQuery(document).ready(function ($) {
             });
         }
         else{
-            $("#second__child")
-            .mouseenter(function () {
-                $('#info__modal').css('left', '0');
-            })
-            .mouseleave(function () {
-                $('#info__modal').css('left', '-100vw');
+            $('#second__child').on('click', function () {
+                var langSwitch = $('#info__modal');
+                if (langSwitch.css('left') === '0px') {
+                    langSwitch.css({
+                        'left': '-100vw'
+                    });
+                }
+                else {
+                    langSwitch.css({
+                        'left': '0px'
+                    });
+                }
             });
         }
     }
