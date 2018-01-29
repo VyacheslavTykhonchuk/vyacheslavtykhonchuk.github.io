@@ -571,10 +571,6 @@ main a:active {
 
         .info__title {
             border-bottom: 1px solid gray;
-
-            svg {
-                transform: rotate(-180deg);
-            }
         }
     }
 }
@@ -588,7 +584,6 @@ main a:active {
     border-bottom: 1px solid lightgray;
     padding: 0 20px;
     font-family: "GothaProMed";
-
     svg {
         transition-duration: .7s;
         transition-timing-function: ease;
@@ -596,8 +591,11 @@ main a:active {
 }
 
 .info__list {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .7s;
     ul {
-        margin: 30px 0;
+        padding: 30px 0;
 
         li {
             text-indent: -.6em;

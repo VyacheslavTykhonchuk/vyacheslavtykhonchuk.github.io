@@ -115,16 +115,22 @@ jQuery(document).ready(function ($) {
     //Function to the css rule
     function checkSize() {
         if ($("#info__modal").css("overflow") == "hidden") {
-            $("#second__child")
-            .mouseenter(function () {
-                $('#info__modal').css('left', '0');
-                $('#info__modal').css('width', '100vw');
-                $('#info__modal').css('height', 'auto');
-                $('#info__modal').css('border-bottom', '1px solid lightgray');
+            $('#second__child').on('click', function () {
+                var langSwitch = $('#info__modal');
+                if (langSwitch.css('left') === '0px') {
+                    langSwitch.css({
+                        'left': '-100vw'
 
-            })
-            .mouseleave(function () {
-                $('#info__modal').css('left', '-100vw');
+                    });
+                }
+                else {
+                    langSwitch.css({
+                        'left': '0px',
+                        'width': '100vw',
+                        'height': 'auto',
+                        'border-bottom': '1px solid lightgray'
+                    });
+                }
             });
         }
         if ($(".title__info__btn").css("display") == "none") {
@@ -159,4 +165,107 @@ jQuery(document).ready(function ($) {
     // modal  end
 
     // mobile drop menu appearing code end
+
+    // info drop down block start
+    $('.info__title').on('click', function () {
+        var dropDownList = $('.info__list');
+        if (dropDownList.css('max-height') === '0px') {
+            dropDownList.css({
+                'max-height': '300px'
+            });
+            $('#drop__down__list__btn').css({
+                'transform': 'rotate(-180deg)'
+            });
+            
+        }
+        else {
+            dropDownList.css({
+                'max-height': '0px'
+                
+            });
+            $('#drop__down__list__btn').css({
+                'transform': 'rotate(0deg)'
+            });
+        }
+    });
+    // info drop down block end
+
+    // soft scroll start
+    (function(document, history, location) {
+        var HISTORY_SUPPORT = !!(history && history.pushState);
+      
+        var anchorScrolls = {
+          ANCHOR_REGEX: /^#[^ ]+$/,
+          OFFSET_HEIGHT_PX: 100,
+      
+          /**
+           * Establish events, and fix initial scroll position if a hash is provided.
+           */
+          init: function() {
+            this.scrollToCurrent();
+            $(window).on('hashchange', $.proxy(this, 'scrollToCurrent'));
+            $('body').on('click', 'a', $.proxy(this, 'delegateAnchors'));
+          },
+      
+          /**
+           * Return the offset amount to deduct from the normal scroll position.
+           * Modify as appropriate to allow for dynamic calculations
+           */
+          getFixedOffset: function() {
+            return this.OFFSET_HEIGHT_PX;
+          },
+      
+          /**
+           * If the provided href is an anchor which resolves to an element on the
+           * page, scroll to it.
+           * @param  {String} href
+           * @return {Boolean} - Was the href an anchor.
+           */
+          scrollIfAnchor: function(href, pushToHistory) {
+            var match, anchorOffset;
+      
+            if(!this.ANCHOR_REGEX.test(href)) {
+              return false;
+            }
+      
+            match = document.getElementById(href.slice(1));
+      
+            if(match) {
+              anchorOffset = $(match).offset().top - this.getFixedOffset();
+              $('html, body').animate({ scrollTop: anchorOffset});
+      
+              // Add the state to history as-per normal anchor links
+              if(HISTORY_SUPPORT && pushToHistory) {
+                history.pushState({}, document.title, location.pathname + href);
+              }
+            }
+      
+            return !!match;
+          },
+          
+          /**
+           * Attempt to scroll to the current location's hash.
+           */
+          scrollToCurrent: function(e) { 
+            if(this.scrollIfAnchor(window.location.hash) && e) {
+                e.preventDefault();
+            }
+          },
+      
+          /**
+           * If the click event's target was an anchor, fix the scroll position.
+           */
+          delegateAnchors: function(e) {
+            var elem = e.target;
+      
+            if(this.scrollIfAnchor(elem.getAttribute('href'), true)) {
+              e.preventDefault();
+            }
+          }
+        };
+      
+          $(document).ready($.proxy(anchorScrolls, 'init'));
+      })(window.document, window.history, window.location);
+      
+    // soft scroll end
 });
